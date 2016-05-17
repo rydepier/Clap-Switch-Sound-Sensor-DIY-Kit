@@ -26,14 +26,14 @@ void loop() {
     digitalWrite(ledPin, HIGH);
   }
   else{
-    digitalWriteledPin, LOW);
+    digitalWrite(ledPin, LOW);
   }
 }
 /*********************************************************/
 void checkSwitch() {
   outputReading = analogRead(14);
-  if(outputReading > background){
-    trigger = false
+  if(outputReading > triggerLevel){
+    trigger = false;
   }
   else{
     trigger = true;
